@@ -11,7 +11,7 @@ const container = (delay) => ({
   visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
 });
 
-const colors = ["#636793", "#FF5757" ,];
+const colors = ["#636793", "#FF5757"];
 
 const Hero = () => {
   const color = colors[Math.floor(Math.random() * colors.length)];
@@ -42,7 +42,7 @@ const Hero = () => {
             <span className="bg-gradient-to-r text-white bg-clip-text text-4xl tracking-tight text-transparent ">
               <Typewriter
                 options={{
-                  strings: ["< web developer />", "< video editor />"],
+                  strings: ["< web dev />", "< video editor />"],
                   autoStart: true,
                   loop: true,
                 }}
