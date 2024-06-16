@@ -28,7 +28,7 @@ export const PROJECTS = [
     image: portfolio,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    link: ["#"],
+    link: ["https://github.com/nxtesh/portfolio"],
   },
   {
     title: "SidcupFamilyGolf Clone",
