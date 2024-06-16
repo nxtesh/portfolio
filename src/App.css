@@ -1,0 +1,3 @@
+.random-color {
+  --random-color: hsl(random(360), 100%, 50%);
+}
