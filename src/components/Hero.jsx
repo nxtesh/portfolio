@@ -70,7 +70,9 @@ const Hero = () => {
               <video
                 src={edit}
                 loop
-                controls
+                muted
+                autoPlay
+                autoStart
                 className="rounded-[10px] "
               ></video>
             </motion.div>

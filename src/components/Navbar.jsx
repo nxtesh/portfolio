@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { RandomReveal } from "react-random-reveal";
 // import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -12,13 +13,12 @@ const Navbar = () => {
     <motion.nav
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: -100 }}
-      transition={{ duration: 1 }}
-      className="border-[1px] border-[#282828] rounded-[1000px] bg-[#252525] mb-20 mt-5 flex items-center justify-between backdrop-filter backdrop-blur-lg "
+      transition={{ duration: 0.7 }}
+      className="border-[1px] border-[#282828] rounded-[1000px] bg-[#252525] mb-20 mt-6 flex items-center justify-between backdrop-filter backdrop-blur-lg "
     >
       <div className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="logo" className="w-20 h-20 mb-1" />
+        <img src={logo} alt="logo" className="w-20" />
       </div>
-
       <div>
         <Link
           to="about"
@@ -26,7 +26,13 @@ const Navbar = () => {
           duration={1000}
           className="hover:text-neutral-400 cursor-pointer sm:ring-emerald-50 hidden lg:block"
         >
-          About
+          <RandomReveal
+            isPlaying={true}
+            duration={0.7}
+            revealDuration={15}
+            revealEasing="linear"
+            characters="About"
+          />
         </Link>
       </div>
       <div>
@@ -36,7 +42,13 @@ const Navbar = () => {
           duration={1100}
           className="hover:text-neutral-400 cursor-pointer sm:ring-emerald-50 hidden lg:block"
         >
-          Technologies
+          <RandomReveal
+            isPlaying={true}
+            duration={0.7}
+            revealDuration={15}
+            revealEasing="linear"
+            characters="Technologies"
+          />
         </Link>
       </div>
       <div>
@@ -46,7 +58,13 @@ const Navbar = () => {
           duration={1200}
           className="hover:text-neutral-400 cursor-pointer sm:ring-emerald-50 hidden lg:block"
         >
-          Projects
+          <RandomReveal
+            isPlaying={true}
+            duration={0.7}
+            revealDuration={15}
+            revealEasing="linear"
+            characters="Projects"
+          />
         </Link>
       </div>
 
@@ -57,11 +75,17 @@ const Navbar = () => {
           duration={1500}
           className="hover:text-neutral-400 cursor-pointer sm:ring-emerald-50 hidden lg:block"
         >
-          Contact
+          <RandomReveal
+            isPlaying={true}
+            duration={0.7}
+            revealDuration={15}
+            revealEasing="linear"
+            characters="Contact"
+          />
         </Link>
       </div>
 
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+      <div className="mx-8 flex items-center justify-center gap-4 text-2xl">
         <div className="hover:text-neutral-400">
           <a href="https://github.com/nxtesh" target="_blank">
             <FaGithub />
