@@ -25,7 +25,7 @@ const Contact = () => {
           </div>
           <div className="hover:text-neutral-400 ">
             <a
-              href="https://www.linkedin.com/in/nitesh-ramharsh-yadav/"
+              href="https://www.linkedin.com/in/nitesh-yadav-010740359/"
               target="_blank"
             >
               <FaLinkedin />
